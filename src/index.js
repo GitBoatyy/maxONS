@@ -1,4 +1,6 @@
 //JS for 737MAX ONS trainer
-import createMFP from './mfpanel.js'
 
+import createMFP from './mfpanel'
 createMFP()
+
+

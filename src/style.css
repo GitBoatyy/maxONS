@@ -22,7 +22,10 @@
 
 }
 
-
+#mfpanel{
+    display:grid;
+    grid-template-columns: ;
+}
 
 
 
