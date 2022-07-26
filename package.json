@@ -1,0 +1,24 @@
+{
+  "name": "maxons",
+  "version": "1.0.0",
+  "description": "webapp for training purposes on the 737 max ONS system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitBoatyy/maxONS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitBoatyy/maxONS/issues"
+  },
+  "homepage": "https://github.com/GitBoatyy/maxONS#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
