@@ -6,8 +6,7 @@ module.exports = {
     mfpanel: './src/mfpanel.js',
   },
   output: {
-    filename: 'main.js',
-    //add more js via filename: 'js.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
