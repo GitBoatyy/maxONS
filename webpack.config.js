@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    mfpanel: './src/mfpanel.js',
+  },
   output: {
     filename: 'main.js',
     //add more js via filename: 'js.js',
