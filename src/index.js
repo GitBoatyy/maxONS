@@ -1,5 +1,8 @@
-//JS for 737MAX ONS trainer
+//TO UPDATE GITHUB PAGES RUN CMD
+// git subtree push --prefix dist origin gh-pages 
 
+//JS for 737MAX ONS trainer
+import './style.css';
 import createMFP from './mfpanel'
 createMFP()
 
