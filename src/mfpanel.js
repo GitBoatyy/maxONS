@@ -25,4 +25,3 @@ export default function createMFP(){
     makebutton('CR', 'C/R')
     makebutton('dArrow', '\u2B0C')
 }
-
