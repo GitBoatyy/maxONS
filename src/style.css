@@ -49,6 +49,10 @@
 }
 #dArrow {
     font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 40%;
+    justify-self: center;
 }
 
 #MFD{
