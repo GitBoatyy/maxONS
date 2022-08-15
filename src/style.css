@@ -38,6 +38,7 @@
     margin: 5px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 #mfpanel > button{
     background-color: black;
     color: white;
@@ -129,7 +130,7 @@
 
 #displaycontainer{
   background-color:black ;
-  width: 60vh;
+  width: 70vh;
   height: 85vh;
 }
 
@@ -151,10 +152,26 @@
   width: 25%;
 }
 
-.navbutton{
 
+#headernav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
 }
-.navbutton:hover{
+
+.navbutton{
+  background-color: rgb(112, 112, 112);
+  color: white;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  height:100% ;
+  width: 100%;
+}
+.navbutton .active{
+  background-color: green;
+}
+.buttonhover:hover{
   border-color: rgb(255, 76, 243);
   border-width: 2px;
 }
