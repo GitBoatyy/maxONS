@@ -132,6 +132,7 @@
   background-color:black ;
   width: 70vh;
   height: 85vh;
+ 
 }
 
 #maintheader{
@@ -176,8 +177,35 @@
   border-width: 2px;
 }
 
+.active{
+  background-color: rgb(54, 214, 54);
+  
+}
+
+#statuscont{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #16f8fb;
+  border-radius: 5%;
+  height: 85%;
+  width: 90%;
+  margin: 5%;
+}
+
+#statusmsg{
+  display: flex;
+  position: fixed;
+  top: 16%;
+  background-color: black;
+  margin: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 
 
+.bluef{
+  color: #16f8fb;
+}
 
 
 
@@ -196,3 +224,4 @@
     min-height: 36.75px;
     background-color: rgb(0, 0, 0, 0.8);
   }
+
