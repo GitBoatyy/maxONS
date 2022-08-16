@@ -5,6 +5,8 @@
 import './style.css';
 import createMFP from './mfpanel'
 import makedisplay from './maintbutton'
+import goToStatus from './maintbuttonfunction'
+
 createMFP()
 
 //MFP button interactions
@@ -15,27 +17,25 @@ const crbutton = document.getElementById('CR')
 const displaycontainer = document.getElementById('displaycontainer')
 const maintbutton = document.getElementById('maintbutton')
 const headernav = document.getElementById('headernav')
-const navbutton = document.querySelectorAll('navbutton')
 
 function crinfo(){
     alert('This button is only equiped on aircraft that have Fail Operational autopilots. C/R (Clear/Recal) button is used to recall fault details in the event of a degraded autoland status')
 }
-function systoggle(){
-    displaycontainer.classList.toggle('invisible')
-}
-function headernavtoggle(){
-    maintbutton.classList.toggle('invisible')
-    headernav.classList.toggle('invisible')
-}
 
-function activenavtoggle(){
-    navbutton.classList.toggle('active')
-}
 
-maintbutton.addEventListener('click', headernavtoggle)
+document.addEventListener( "click", someListener );
+
+function someListener(event){
+    var element = event.target;
+    if(element.id == 'SYS'){//creates and clears displaycontainer and maint button
+        makedisplay()
+    }else if(element.id == 'maintbutton'){ //clears displaycontainer and goes to default status page
+        goToStatus()
+    }
+}
 //sysbutton.addEventListener('click', systoggle)
 crbutton.addEventListener('click' , crinfo)
 
 
+//creates displaycontainer and maint button
 
-sysbutton.addEventListener('click', makedisplay)

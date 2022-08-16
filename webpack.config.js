@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     mfpanel: './src/mfpanel.js',
-    makedisplay: './src/maintbutton.js'
+    makedisplay: './src/maintbutton.js',
+    gotostatus: './src/maintbuttonfunction.js',
   },
   output: {
     filename: '[name].bundle.js',
