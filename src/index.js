@@ -31,11 +31,11 @@ function someListener(event){
         makedisplay()
     }else if(element.id == 'maintbutton'){ //clears displaycontainer and goes to default status page
         goToStatus()
+    }else if(element.id == 'sysmenu'){
+        makedisplay()
     }
 }
-//sysbutton.addEventListener('click', systoggle)
 crbutton.addEventListener('click' , crinfo)
 
 
-//creates displaycontainer and maint button
 
