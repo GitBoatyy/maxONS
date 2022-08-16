@@ -40,4 +40,25 @@ export default function goToStatus(){
     statusmsg.id = 'statusmsg'
     statusmsg.innerText = 'STATUS MESSAGES'
     statuscont.appendChild(statusmsg)
+    const statusex = document.createElement('div')
+    statusex.classList.add('whitef')
+    statusex.id = 'statusexamples'
+    statuscont.appendChild(statusex)
+    const example = document.createElement('div')
+    example.classList.add('whitef')
+    example.innerText = 'ENG LPTACC VALVE L'
+    statusex.appendChild(example)
+    const example2 = document.createElement('div')
+    example2.innerText = 'APU DOOR'
+    statusex.appendChild(example2)
+    const example3 = document.createElement('div')
+    example3.innerText = 'PSEU COMM'
+    statusex.appendChild(example3)
+    const example4 = document.createElement('div')
+    example4.innerText = 'DISPLAYS CONFIG DATA'
+    statusex.appendChild(example4)
+    const example5 = document.createElement('div')
+    example5.innerText = 'DPC1'
+    statusex.appendChild(example5)
+
 }
