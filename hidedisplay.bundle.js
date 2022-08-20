@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/mfpanel.js":
-/*!************************!*\
-  !*** ./src/mfpanel.js ***!
-  \************************/
+/***/ "./src/hidedisplay.js":
+/*!****************************!*\
+  !*** ./src/hidedisplay.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMFP)\n/* harmony export */ });\n// js for multi-function panel MAX ONS\nfunction createMFP(){\n    const makediv = document.createElement('div')\n    makediv.id = 'mfpanel'\n    makediv.classList.add('side')\n    document.body.appendChild(makediv)\n    const MFDdiv = document.createElement('div')\n    MFDdiv.id = 'MFD'\n    MFDdiv.innerHTML = \"<h3> MFD <h3>\"\n    makediv.appendChild(MFDdiv)\n    const ENGTFR = document.createElement('div')\n    ENGTFR.id = 'ENGTFR'\n    ENGTFR.innerHTML = \"<h3> ENG TFR <h3>\"\n    makediv.appendChild(ENGTFR)\n    //buttons\n    function makebutton(id, text){\n        let mfdbutton = document.createElement('button')\n        mfdbutton.id = id\n        mfdbutton.innerText = text\n        makediv.appendChild(mfdbutton)\n    }\n\n    makebutton('ENG', 'ENG')\n    makebutton('SYS', 'SYS')\n    makebutton('INFO', 'INFO')\n    makebutton('CR', 'C/R')\n    makebutton('dArrow', '\\u2B0C')\n}\n\n//# sourceURL=webpack://maxons/./src/mfpanel.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ hidedisplay)\n/* harmony export */ });\n\n\nfunction hidedisplay(){\n    const mfpanel = document.getElementById('mfpanel')\n    document.body.removeChild(mfpanel)\n    const showmfpanel = document.createElement('div')\n    showmfpanel.id = 'showmfpanel'\n    showmfpanel.classList.add('side')\n    document.body.appendChild(showmfpanel)\n    const show = document.createElement('button')\n    show.id = 'showmf'\n    show.innerText = '\\u25B2'\n    showmfpanel.appendChild(show)\n}\n\n//# sourceURL=webpack://maxons/./src/hidedisplay.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/mfpanel.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/hidedisplay.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
