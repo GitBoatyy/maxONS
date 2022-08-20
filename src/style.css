@@ -42,9 +42,9 @@ body{
 
 #showmfpanel{
     position: fixed;
-    top: 10vh;
     background-color: rgb(104, 94, 94);
     border-radius: 10px;
+    top: 0;
     margin: 1%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
