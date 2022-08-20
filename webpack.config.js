@@ -8,6 +8,7 @@ module.exports = {
     makedisplay: './src/maintbutton.js',
     gotostatus: './src/maintbuttonfunction.js',
     hidedisplay: './src/hidedisplay.js',
+    hidemf: './src/hidemf.js',
   },
   output: {
     filename: '[name].bundle.js',

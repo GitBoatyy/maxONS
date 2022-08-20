@@ -7,6 +7,7 @@ import createMFP from './mfpanel'
 import makedisplay from './maintbutton'
 import goToStatus from './maintbuttonfunction'
 import hidedisplay from './hidedisplay'
+import hidemf from './hidemf'
 
 createMFP()
 
@@ -37,6 +38,7 @@ function someListener(event){
         makedisplay()
     } else if(element.id == 'showmf'){
         createMFP()
+        hidemf()
     }
 }
 crbutton.addEventListener('click' , crinfo)
