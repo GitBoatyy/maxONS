@@ -40,6 +40,31 @@ body{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+#showmfpanel{
+    position: fixed;
+    top: 10vh;
+    background-color: rgb(104, 94, 94);
+    border-radius: 10px;
+    margin: 1%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#showmfpanel > button{
+  background-color: black;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 5px #000000,
+  inset 0 0 0 1px #fff;
+  width: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+
+}
+
 #mfpanel > button{
     background-color: black;
     color: white;
@@ -133,7 +158,8 @@ body{
   background-color:black ;
   width: 70vh;
   height: 85vh;
- 
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
 
 #maintheader{

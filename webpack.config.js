@@ -7,6 +7,7 @@ module.exports = {
     mfpanel: './src/mfpanel.js',
     makedisplay: './src/maintbutton.js',
     gotostatus: './src/maintbuttonfunction.js',
+    hidedisplay: './src/hidedisplay.js',
   },
   output: {
     filename: '[name].bundle.js',

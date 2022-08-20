@@ -6,6 +6,7 @@ import './style.css';
 import createMFP from './mfpanel'
 import makedisplay from './maintbutton'
 import goToStatus from './maintbuttonfunction'
+import hidedisplay from './hidedisplay'
 
 createMFP()
 
@@ -29,10 +30,13 @@ function someListener(event){
     var element = event.target;
     if(element.id == 'SYS'){//creates and clears displaycontainer and maint button
         makedisplay()
+        hidedisplay()
     }else if(element.id == 'maintbutton'){ //clears displaycontainer and goes to default status page
         goToStatus()
     }else if(element.id == 'sysmenu'){
         makedisplay()
+    } else if(element.id == 'showmf'){
+        createMFP()
     }
 }
 crbutton.addEventListener('click' , crinfo)

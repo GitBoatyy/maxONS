@@ -2,6 +2,7 @@
 export default function createMFP(){
     const makediv = document.createElement('div')
     makediv.id = 'mfpanel'
+    makediv.classList.add('side')
     document.body.appendChild(makediv)
     const MFDdiv = document.createElement('div')
     MFDdiv.id = 'MFD'
