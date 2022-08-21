@@ -1,13 +1,13 @@
 
 
 //ids are grid location column/row for css placement
-export default function displayselection(){
+export default function eraseselection(){
     const mdpheadernav = document.getElementById('mdpheadernav')
     mdpheadernav.replaceChildren()
     const displaysel = document.createElement('button')
     displaysel.id = 'dissel'
     displaysel.innerText = 'DISPLAY SELECTION'
-    displaysel.classList.add('buttonhover', 'navbutton', 'active')
+    displaysel.classList.add('buttonhover', 'navbutton')
     mdpheadernav.appendChild(displaysel)
     const printsel = document.createElement('button')
     printsel.id = 'printsel'
@@ -22,7 +22,7 @@ export default function displayselection(){
     const ersel = document.createElement('button')
     ersel.id = 'ersel'
     ersel.innerText = 'ERASE SELECTION'
-    ersel.classList.add('buttonhover', 'navbutton')
+    ersel.classList.add('buttonhover', 'navbutton', 'active')
     mdpheadernav.appendChild(ersel)
 
 function newtext(a, b){
@@ -43,6 +43,13 @@ function displaybutton(a, b){
     displaybutton.innerText = a
     disselcont.appendChild(displaybutton)
 }
+function erasebutton(a, b){
+    const displaybutton = document.createElement('button')
+    displaybutton.id = b
+    displaybutton.classList.add('navbutton', 'buttonhover',)
+    displaybutton.innerText = a
+    disselcont.appendChild(displaybutton)
+}
 
 const mdpcont = document.getElementById('mdpdisplaycontainer')
 mdpcont.replaceChildren()
@@ -57,47 +64,47 @@ newtext('ds41', 'MANUAL')
 newtext('ds51', 'AUTO')
 newtext('ds12', '21')
 newtext('ds22', 'AIR CONDITIONING')
-displaybutton('DISPLAY', 'dsac')
+filler()
 filler()
 filler()
 newtext('ds13', '27')
 newtext('ds23', 'FLIGHT CONTROL')
-displaybutton('DISPLAY', 'dsfc')
+filler()
 filler()
 filler()
 newtext('ds14', '27')
 newtext('ds24', 'SMYD')
-displaybutton('DISPLAY', 'dssmyd')
+filler()
 filler()
 filler()
 newtext('ds15', '31')
 newtext('ds25', 'MDS')
-displaybutton('DISPLAY', 'dsmds')
+filler()
 filler()
 filler()
 newtext('ds16', '32')
 newtext('ds26', 'PSEU')
-displaybutton('DISPLAY')
+filler()
 filler()
 filler()
 newtext('ds17', '36')
 newtext('ds27', 'AIR SUPPLY')
-displaybutton('DISPLAY', 'dsas')
+filler()
 filler()
 filler()
 newtext('ds18', '49')
 newtext('ds28', 'APU')
-displaybutton('DISPLAY', 'dsapu')
+filler()
 filler()
 filler()
 newtext('ds19', '71')
 newtext('ds29', 'PERFORMANCE')
-displaybutton('DISPLAY', 'dsperf')
+filler()
 filler()
 displaybutton('SHOW LIST')
 newtext('ds110', '71')
 newtext('ds210', 'EPCS')
-displaybutton('DISPLAY', 'dsepcs')
+filler()
 filler()
 displaybutton('SHOW LIST')
 newtext('ds111', '71')
@@ -110,6 +117,9 @@ newtext('ds212', 'ENGINE 2 EXCEEDANCE')
 filler()
 filler()
 filler()
-
-
+filler()
+filler()
+filler()
+erasebutton('ERASE ALL MANUAL')
+erasebutton('ERASE ALL AUTO')
 }

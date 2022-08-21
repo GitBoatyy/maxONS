@@ -9,7 +9,10 @@ import goToStatus from './maintbuttonfunction'
 import hidedisplay from './hidedisplay'
 import hidemf from './hidemf'
 import goToMDP from './maintdatapgs'
-import displayselection from "./displayselection"
+import displayselection from './displayselection'
+import printselection from './printselection'
+import datalinkselection from './datalinkselection'
+import eraseselection from './eraseselection'
 
 createMFP()
 
@@ -47,6 +50,12 @@ function someListener(event){
         goToMDP()
     }else if(element.id == 'dissel'){
         displayselection()
+    }else if(element.id == 'printsel'){
+        printselection()
+    }else if (element.id == 'datasel'){
+        datalinkselection()
+    }else if (element.id == 'ersel'){
+        eraseselection()
     }
 }
 crbutton.addEventListener('click' , crinfo)

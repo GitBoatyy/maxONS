@@ -10,7 +10,10 @@ module.exports = {
     hidedisplay: './src/hidedisplay.js',
     hidemf: './src/hidemf.js',
     goToMDP: './src/maintdatapgs.js',
-    displayselection: './src/displayselection.js'
+    displayselection: './src/displayselection.js',
+    printselection: './src/printselection.js',
+    datalinkselection: './src/datalinkselection.js',
+    eraseselection: './src/eraseselection.js',
   },
   output: {
     filename: '[name].bundle.js',
