@@ -9,6 +9,8 @@ module.exports = {
     gotostatus: './src/maintbuttonfunction.js',
     hidedisplay: './src/hidedisplay.js',
     hidemf: './src/hidemf.js',
+    goToMDP: './src/maintdatapgs.js',
+    displayselection: './src/displayselection.js'
   },
   output: {
     filename: '[name].bundle.js',

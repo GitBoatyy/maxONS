@@ -159,7 +159,6 @@ body{
   width: 70vh;
   height: 85vh;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
 }
 
 #maintheader{
@@ -171,7 +170,7 @@ body{
 
 #maintbutton{
   position:absolute ;
-  background-color: rgb(112, 112, 112);
+  background-color: rgb(175, 175, 175);
   color: white;
   font-weight: bold;
   top: 0;
@@ -187,8 +186,14 @@ body{
   grid-template-rows: 1;
 }
 
+#mdpheadernav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
+}
+
 .navbutton{
-  background-color: rgb(112, 112, 112);
+  background-color: rgb(175, 175, 175);
   color: white;
   font-weight: bold;
   top: 0;
@@ -278,17 +283,29 @@ width: 100%;
 height: 100%;
 padding-left: 5%;
 }
+
 #a{
   display: flex;
   align-self: end;
 }
+
 #b{
   display: flex;
   align-self: end;
 }
 
+#displayselcontainer{
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 3%;
+}
 
-
+.dsfont{
+  font-size: smaller;
+  display: flex;
+  align-items: center;
+}
 
 
 
