@@ -330,6 +330,13 @@ padding-left: 5%;
   display: flex;
   justify-content: center;
 }
+#mcddiscont{
+  margin-top: 5%;
+}
+.mcpbutton{
+  width: 60%;
+  height:2rem;
+}
 
 /*footer*/
 .footer {

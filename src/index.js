@@ -9,6 +9,7 @@ import goToStatus from './maintbuttonfunction'
 import hidedisplay from './hidedisplay'
 import hidemf from './hidemf'
 import goToMDP from './maintdatapgs'
+import goToMCP from './maintctrlpgs';
 import displayselection from './displayselection'
 import printselection from './printselection'
 import datalinkselection from './datalinkselection'
@@ -48,6 +49,8 @@ function someListener(event){
         goToStatus()
     }else if(element.id == 'MDP'){
         goToMDP()
+    }else if(element.id == 'MCP'){
+        goToMCP()
     }else if(element.id == 'dissel'){
         displayselection()
     }else if(element.id == 'printsel'){
