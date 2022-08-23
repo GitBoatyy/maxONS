@@ -159,6 +159,8 @@ body{
   width: 70vh;
   height: 85vh;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  max-width: 476px;
+  max-height: 638px;
 }
 
 #maintheader{
