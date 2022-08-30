@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/hidedisplay.js":
-/*!****************************!*\
-  !*** ./src/hidedisplay.js ***!
-  \****************************/
+/***/ "./src/hidemf.js":
+/*!***********************!*\
+  !*** ./src/hidemf.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ hidedisplay)\n/* harmony export */ });\nfunction hidedisplay() {\n    const mfpanel = document.getElementById(\"mfpanel\");\n    document.body.removeChild(mfpanel);\n    const showmfpanel = document.createElement(\"div\");\n    showmfpanel.id = \"showmfpanel\";\n    showmfpanel.classList.add(\"side\");\n    document.body.appendChild(showmfpanel);\n    const show = document.createElement(\"button\");\n    show.id = \"showmf\";\n    show.innerText = \"\\u25B2\";\n    showmfpanel.appendChild(show);\n  }\n  \n\n//# sourceURL=webpack://maxons/./src/hidedisplay.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ hidemf)\n/* harmony export */ });\nfunction hidemf() {\n    const mf = document.getElementById(\"showmfpanel\");\n    document.body.removeChild(mf);\n  }\n  \n\n//# sourceURL=webpack://maxons/./src/hidemf.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/hidedisplay.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/hidemf.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
