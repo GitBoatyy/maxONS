@@ -26,9 +26,6 @@ const displaycontainer = document.getElementById('displaycontainer')
 const maintbutton = document.getElementById('maintbutton')
 const headernav = document.getElementById('headernav')
 
-function crinfo(){
-    alert('This button is only equipped on aircraft that have Fail Operational autopilots. C/R (Clear/Recal) button is used to recall fault details in the event of a degraded autoland status')
-}
 
 
 document.addEventListener( "click", someListener );
@@ -63,7 +60,6 @@ function someListener(event){
         eraseselection()
     }
 }
-crbutton.addEventListener('click' , crinfo)
 
 
 
