@@ -27,7 +27,7 @@ const maintbutton = document.getElementById('maintbutton')
 const headernav = document.getElementById('headernav')
 
 function crinfo(){
-    alert('This button is only equiped on aircraft that have Fail Operational autopilots. C/R (Clear/Recal) button is used to recall fault details in the event of a degraded autoland status')
+    alert('This button is only equipped on aircraft that have Fail Operational autopilots. C/R (Clear/Recal) button is used to recall fault details in the event of a degraded autoland status')
 }
 
 
@@ -40,6 +40,8 @@ function someListener(event){
         hidedisplay()
     }else if(element.id == 'maintbutton'){ //clears displaycontainer and goes to default status page
         goToStatus()
+    }else if(element.id == 'CR'){
+        alert('This button is only equipped on aircraft that have Fail Operational autopilots. C/R (Clear/Recal) button is used to recall fault details in the event of a degraded autoland status')
     }else if(element.id == 'sysmenu'){
         makedisplay()
     } else if(element.id == 'showmf'){
