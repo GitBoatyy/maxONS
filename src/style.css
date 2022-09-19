@@ -339,6 +339,21 @@ padding-left: 5%;
   width: 60%;
   height:2rem;
 }
+#ONBDmaintcont{
+  display: flex;
+  flex-direction: row;
+}
+.ONBDmaintbutton{
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+#ONBDcarrier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
 
 /*footer*/
 .footer {

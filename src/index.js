@@ -14,6 +14,7 @@ import displayselection from './displayselection'
 import printselection from './printselection'
 import datalinkselection from './datalinkselection'
 import eraseselection from './eraseselection'
+import onboardMaint from './ONBDMaint';
 
 createMFP()
 
@@ -58,6 +59,8 @@ function someListener(event){
         datalinkselection()
     }else if (element.id == 'ersel'){
         eraseselection()
+    }else if(element.id == 'obmaint'){
+        onboardMaint()
     }
 }
 
