@@ -354,44 +354,7 @@ padding-left: 5%;
   align-items: center;
   height: 30%;
 }
-#acdisplaycontainer{
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  padding-top: 5%;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: 14px;
-}
-#acdisplayAIRCON{
-text-decoration: underline;
-grid-column-start: 1;
-grid-column-end: 5;
-justify-self: center;
-align-self: center;
-}
-#acdisplayunits{
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-#acdisplayTRIMAIR{
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-#acdisplayon {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-#acdisplayCONT{
-  grid-column-start: 2;
-  grid-column-end: 3;
 
-}
-
-
-#displaycontfooter{
-  position: relative;
-  bottom: 0;
-}
 /*footer*/
 .footer {
     position: fixed;

@@ -15,7 +15,6 @@ import printselection from './printselection'
 import datalinkselection from './datalinkselection'
 import eraseselection from './eraseselection'
 import onboardMaint from './ONBDMaint';
-import acDisplay from './maintdatapgs/display/acdisplay';
 
 createMFP()
 
@@ -62,8 +61,6 @@ function someListener(event){
         eraseselection()
     }else if(element.id == 'obmaint'){
         onboardMaint()
-    }else if(element.id == 'dsac'){
-        acDisplay()
     }
 }
 
