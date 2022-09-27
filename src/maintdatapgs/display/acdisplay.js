@@ -69,15 +69,7 @@ function filler() {
         newtext.innerText = b;
         foot.appendChild(newtext);
         }
-function displaybuttonf(a, b) {
-    const foot = document.getElementById('displaycontfooter')
 
-    const displaybutton = document.createElement('button');
-    displaybutton.classList.add('navbutton', 'buttonhover', 'dsbutton');
-    displaybutton.innerText = a;
-    displaybutton.id = b;
-    foot.appendChild(displaybutton);
-    }
 
     newtext('acdisplayAIRCON', 'AIR CONDITIONING', 'bluef')
     newtext('acdisplayunits', 'METRIC UNITS', 'whitef')
@@ -183,10 +175,37 @@ function foot(){
    foot.id = 'displaycontfooter'
     displaycontainer.appendChild(foot);
 }
+function fillerf() {
+    const foot = document.createElement("div");
+    const filler = document.createElement('div');
+    filler.innerText = 'x'
+    foot.appendChild(filler);
+    }
+function displaybuttonf(a, b) {
+    const foot = document.getElementById('displaycontfooter')
+    const displaybutton = document.createElement('button');
+    displaybutton.classList.add('navbutton', 'buttonhover');
+    displaybutton.innerText = a;
+    displaybutton.id = b;
+    foot.appendChild(displaybutton);
+    }
+function displaybuttonpage(a, b) {
+    const foot = document.getElementById('displaycontfooter')
+    const displaybutton = document.createElement('button');
+    displaybutton.classList.add('navbutton', 'buttonhover');
+    displaybutton.innerText = a;
+    displaybutton.id = b;
+    foot.appendChild(displaybutton);
+    }
 foot()
+fillerf()
+fillerf()
 newtextf('acdisplayDATE', 'DATE', 'bluef')
 newtextf('acdisplayDATED', today, 'whitef' )
 displaybuttonf('PREV MENU')
-
-
+displaybuttonf('PRINT')
+displaybuttonf('SEND')
+displaybuttonf('RECORD')
+displaybuttonpage('PREV PAGE')
+displaybuttonpage('NEXT PAGE')
 }
