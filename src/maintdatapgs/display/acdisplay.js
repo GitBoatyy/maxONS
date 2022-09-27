@@ -22,12 +22,12 @@ export default function acDisplay(){
     sysbutt.innerText = 'SYS MENU'
     navbar.appendChild(sysbutt)
     const statusbutt = document.createElement('button')
-    statusbutt.classList.add('buttonhover', 'navbutton', 'active')
+    statusbutt.classList.add('buttonhover', 'navbutton')
     statusbutt.id = 'status'
     statusbutt.innerText = 'STATUS'
     navbar.appendChild(statusbutt)
     const MDP = document.createElement('button')
-    MDP.classList.add('buttonhover', 'navbutton')
+    MDP.classList.add('buttonhover', 'navbutton', 'active')
     MDP.id = 'MDP'
     MDP.innerText = 'MAINT DATA PGS'
     navbar.appendChild(MDP)
