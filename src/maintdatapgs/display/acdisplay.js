@@ -4,9 +4,10 @@ export default function acDisplay(){
     let currentTime = new Date();
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let yyyy = today.getFullYear();
-    today = mm + '/' + dd + '/' + yyyy;
+    let mm = today.toLocaleString('en-US', {month: 'short'})
+    let yyyy = String(today.getFullYear());
+    let yy = yyyy.substring(2)
+    today = dd + ' ' + mm + ' ' + yy;
 
 
 
@@ -58,42 +59,29 @@ function filler() {
     container.appendChild(filler);
     }
 
-    /** newtext creates a div containing
- * @param {var} a innertext
- * @param {var} b id */
-     function newtextf(a, b, c) {
-        const foot = document.getElementById('displaycontfooter')
-        const newtext = document.createElement("div");
-        newtext.id = a;
-        newtext.classList.add(c, "dsfont");
-        newtext.innerText = b;
-        foot.appendChild(newtext);
-        }
-
-
-    newtext('acdisplayAIRCON', 'AIR CONDITIONING', 'bluef')
-    newtext('acdisplayunits', 'METRIC UNITS', 'whitef')
-    newtext('acdisplayTRIMAIR', 'TRIM AIR', 'bluef')
-    newtext('acdisplayon', 'ON', 'whitef')
-    newtext('acdisplayCONT', 'CONT CAB', 'bluef')
-    newtext('acdisplayFWD', 'FORWARD', 'bluef')
-    newtext('acdisplayAFT', 'AFT', 'bluef')
-    newtext('acdisplaySEL', 'SELECTOR TEMP', 'bluef')
-    newtext('acdisplaySELCONT', '24', 'whitef')
-    newtext('acdisplaySELFWDT', '24', 'whitef')
-    newtext('acdisplaySELAFT', '24', 'whitef')
-    newtext('acdisplayZONE', 'ZONE TEMP', 'bluef')
-    newtext('acdisplayZONET', '30', 'whitef')
-    newtext('acdisplayZONECONT', '29', 'whitef')
-    newtext('acdisplayZONEFWD', '28', 'whitef')
-    newtext('acdisplayZONEDUCT', 'ZONE DUCT TEMP', 'bluef')
-    newtext('acdisplayZONEDUCTCONT', '36', 'whitef')
-    newtext('acdisplayZONEDUCTFWD', '31', 'whitef')
-    newtext('acdisplayZONEDUCTAFT', '30', 'whitef')
-    newtext('acdisplayZONETRIM', 'ZONE TRIM VLV POS', 'bluef')
-    newtext('acdisplayZONETRIMCONT', 'CLOSED', 'whitef')
-    newtext('acdisplayZONETRIMFWD', 'CLOSED', 'whitef')
-    newtext('acdisplayZONETRIMAFT', 'CLOSED', 'whitef')
+newtext('acdisplayAIRCON', 'AIR CONDITIONING', 'bluef')
+newtext('acdisplayunits', 'METRIC UNITS', 'whitef')
+newtext('acdisplayTRIMAIR', 'TRIM AIR', 'bluef')
+newtext('acdisplayon', 'ON', 'whitef')
+newtext('acdisplayCONT', 'CONT CAB', 'bluef')
+newtext('acdisplayFWD', 'FORWARD', 'bluef')
+newtext('acdisplayAFT', 'AFT', 'bluef')
+newtext('acdisplaySEL', 'SELECTOR TEMP', 'bluef')
+newtext('acdisplaySELCONT', '24', 'whitef')
+newtext('acdisplaySELFWDT', '24', 'whitef')
+newtext('acdisplaySELAFT', '24', 'whitef')
+newtext('acdisplayZONE', 'ZONE TEMP', 'bluef')
+newtext('acdisplayZONET', '30', 'whitef')
+newtext('acdisplayZONECONT', '29', 'whitef')
+newtext('acdisplayZONEFWD', '28', 'whitef')
+newtext('acdisplayZONEDUCT', 'ZONE DUCT TEMP', 'bluef')
+newtext('acdisplayZONEDUCTCONT', '36', 'whitef')
+newtext('acdisplayZONEDUCTFWD', '31', 'whitef')
+newtext('acdisplayZONEDUCTAFT', '30', 'whitef')
+newtext('acdisplayZONETRIM', 'ZONE TRIM VLV POS', 'bluef')
+newtext('acdisplayZONETRIMCONT', 'CLOSED', 'whitef')
+newtext('acdisplayZONETRIMFWD', 'CLOSED', 'whitef')
+newtext('acdisplayZONETRIMAFT', 'CLOSED', 'whitef')
 filler()
 filler()
 filler()
@@ -170,17 +158,35 @@ filler()
 filler()
 filler()
 filler()
+filler()
+filler()
+filler()
+filler()
+filler()
+filler()
+filler()
+filler()
+
 function foot(){
     const foot = document.createElement("div");
    foot.id = 'displaycontfooter'
     displaycontainer.appendChild(foot);
 }
 function fillerf() {
-    const foot = document.createElement("div");
+    const foot = document.getElementById('displaycontfooter')
     const filler = document.createElement('div');
     filler.innerText = 'x'
     foot.appendChild(filler);
     }
+function newtextf(a, b, c) {
+    const foot = document.getElementById('displaycontfooter')
+    const newtext = document.createElement("div");
+    newtext.id = a;
+    newtext.classList.add(c, "dsfont");
+    newtext.innerText = b;
+    foot.appendChild(newtext);
+    }
+
 function displaybuttonf(a, b) {
     const foot = document.getElementById('displaycontfooter')
     const displaybutton = document.createElement('button');
@@ -192,12 +198,14 @@ function displaybuttonf(a, b) {
 function displaybuttonpage(a, b) {
     const foot = document.getElementById('displaycontfooter')
     const displaybutton = document.createElement('button');
-    displaybutton.classList.add('navbutton', 'buttonhover');
+    displaybutton.classList.add('pagebutton', 'buttonhover');
     displaybutton.innerText = a;
     displaybutton.id = b;
     foot.appendChild(displaybutton);
     }
 foot()
+fillerf()
+fillerf()
 fillerf()
 fillerf()
 newtextf('acdisplayDATE', 'DATE', 'bluef')
