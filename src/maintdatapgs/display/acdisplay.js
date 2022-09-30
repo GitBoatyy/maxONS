@@ -1,9 +1,6 @@
 
 export default function acDisplay(){
 
-
-
-
     const displaycontainer = document.getElementById('displaycontainer')
     displaycontainer.replaceChildren()
     const navbar = document.createElement('div')

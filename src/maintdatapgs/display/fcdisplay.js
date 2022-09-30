@@ -36,6 +36,22 @@ export default function fcDisplay(){
     container.id = 'acdisplaycontainer'
     displaycontainer.appendChild(container)
 
+    //ids are grid location column/row for css placement
+function newtext(a, b, c) {
+    const newtext = document.createElement("div");
+    newtext.id = a;
+    newtext.classList.add(c, "dsfont");
+    newtext.innerText = b;
+    container.appendChild(newtext);
+    }
+
+function filler() {
+    const filler = document.createElement('div');
+    filler.innerText = 'x'
+    container.appendChild(filler);
+    }
+newtext('fctitle', 'FLIGHT CONTROL', 'bluef')
+
 
 //for all main data pgs display function copy all below
 
