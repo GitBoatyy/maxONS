@@ -1,5 +1,6 @@
 //TO UPDATE GITHUB PAGES RUN CMD
-// git subtree push --prefix dist origin gh-pages 
+// git add dist && git commit -m ''
+// git subtree push --prefix dist origin gh-pages
 
 //JS for 737MAX ONS trainer
 import './style.css';
@@ -16,7 +17,7 @@ import datalinkselection from './datalinkselection'
 import eraseselection from './eraseselection'
 import onboardMaint from './ONBDMaint';
 import acDisplay from './maintdatapgs/display/acdisplay';
-
+import fcDisplay from './maintdatapgs/display/fcdisplay'
 createMFP()
 
 //MFP button interactions
@@ -64,6 +65,10 @@ function someListener(event){
         onboardMaint()
     }else if(element.id == 'dsac'){
         acDisplay()
+    }else if(element.id == 'prevmenu'){
+        goToMDP()
+    }else if(element.id == 'dsfc'){
+        fcDisplay()
     }
 }
 

@@ -1,13 +1,6 @@
 
 export default function acDisplay(){
 
-    let currentTime = new Date();
-    let today = new Date();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = today.toLocaleString('en-US', {month: 'short'})
-    let yyyy = String(today.getFullYear());
-    let yy = yyyy.substring(2)
-    today = dd + ' ' + mm + ' ' + yy;
 
 
 
@@ -167,6 +160,18 @@ filler()
 filler()
 filler()
 
+
+
+
+//for all main data pgs display function copy all below
+let currentTime = new Date();
+let today = new Date();
+let dd = String(today.getDate()).padStart(2, '0');
+let mm = today.toLocaleString('en-US', {month: 'short'})
+let yyyy = String(today.getFullYear());
+let yy = yyyy.substring(2)
+today = dd + ' ' + mm + ' ' + yy;
+
 function foot(){
     const foot = document.createElement("div");
    foot.id = 'displaycontfooter'
@@ -210,7 +215,7 @@ fillerf()
 fillerf()
 newtextf('acdisplayDATE', 'DATE', 'bluef')
 newtextf('acdisplayDATED', today, 'whitef' )
-displaybuttonf('PREV MENU')
+displaybuttonf('PREV MENU', 'prevmenu')
 displaybuttonf('PRINT')
 displaybuttonf('SEND')
 displaybuttonf('RECORD')

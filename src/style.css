@@ -161,6 +161,7 @@ body{
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   max-width: 476px;
   max-height: 638px;
+  position: relative;
 }
 
 #maintheader{
@@ -387,8 +388,8 @@ align-self: center;
 }
 
 #displaycontfooter{
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
