@@ -15,7 +15,6 @@ module.exports = {
     printselection: './src/printselection.js',
     datalinkselection: './src/datalinkselection.js',
     eraseselection: './src/eraseselection.js',
-    
   },
   output: {
     filename: '[name].bundle.js',
