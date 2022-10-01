@@ -1,7 +1,5 @@
 
 export default function fcDisplay(){
-
-
     const displaycontainer = document.getElementById('displaycontainer')
     displaycontainer.replaceChildren()
     const navbar = document.createElement('div')
@@ -33,10 +31,10 @@ export default function fcDisplay(){
     obmaint.innerText = 'ONBD MAINT'
     navbar.appendChild(obmaint)
     const container = document.createElement('div')
-    container.id = 'acdisplaycontainer'
+    container.id = 'fcdisplaycontainer' //change this container name for specific page layouts
     displaycontainer.appendChild(container)
 
-    //ids are grid location column/row for css placement
+    //a = id. b = innerText. c = font color classlist (bluef / whitef)
 function newtext(a, b, c) {
     const newtext = document.createElement("div");
     newtext.id = a;
@@ -44,13 +42,62 @@ function newtext(a, b, c) {
     newtext.innerText = b;
     container.appendChild(newtext);
     }
-
+    //this function is just to fill empty spots in grid
+    //saves time over css grid placement
 function filler() {
     const filler = document.createElement('div');
     filler.innerText = 'x'
     container.appendChild(filler);
     }
+//page specific code goes below here
 newtext('fctitle', 'FLIGHT CONTROL', 'bluef')
+const fcg1 = document.createElement('div')
+fcg1.id = 'fcg1'
+container.appendChild(fcg1)
+function g1newtext(a, b, c) {
+    const newtext = document.createElement("div");
+    newtext.id = a;
+    newtext.classList.add(c, "dsfont");
+    newtext.innerText = b;
+    fcg1.appendChild(newtext);
+    }
+g1newtext('cptctrlwhl', 'CAPT CTRL WHL', 'bluef')
+g1newtext('cptctrlwhlarr', '\u25C0', 'whitef')
+g1newtext('cptctrlwhldeg', '-1.1', 'whitef')
+g1newtext('columnpos', 'COLUMN POSN', 'bluef')
+g1newtext('columnposarr', '\u25BC', 'whitef')
+g1newtext('columnposdeg', '0.3', 'whitef')
+g1newtext('scefoctrlwhl', 'SCE FO CTRL WHL', 'bluef')
+g1newtext('scefoctrlwhlarr', '\u25C0', 'whitef')
+g1newtext('scefoctrowhldeg', '-1.6', 'whitef')
+g1newtext('scespdbrklvrpos', 'SCE SPDBRK LVR POSN', 'bluef')
+g1newtext('scespdbrklvrposarr', 'x', 'blackf')
+g1newtext('scespdbrklvrposdeg', '0.0', 'whitef')
+
+const fcg2 = document.createElement('div')
+fcg2.id = 'fcg2'
+container.appendChild(fcg2)
+const fcg3 = document.createElement('div')
+fcg3.id = 'fcg3'
+container.appendChild(fcg3)
+const fcg4 = document.createElement('div')
+fcg4.id = 'fcg4'
+container.appendChild(fcg4)
+const fcg5 = document.createElement('div')
+fcg5.id = 'fcg5'
+container.appendChild(fcg5)
+const fcg6 = document.createElement('div')
+fcg6.id = 'fcg6'
+container.appendChild(fcg6)
+const fcg7 = document.createElement('div')
+fcg7.id = 'fcg7'
+container.appendChild(fcg7)
+const fcg8 = document.createElement('div')
+fcg8.id = 'fcg8'
+container.appendChild(fcg8)
+
+
+
 
 
 //for all main data pgs display function copy all below
