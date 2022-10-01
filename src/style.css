@@ -260,6 +260,15 @@ body{
 .blackf{
   color: black;
 }
+.underline{
+  text-decoration: underline;
+}
+.amberf{
+  color: rgb(238, 172, 48);
+}
+.invis{
+  visibility: hidden;
+}
 
 #hyddisplay{
   display: flex;
@@ -455,6 +464,7 @@ align-self: center;
 }
 
 
+
 #fcg3{
   padding-top: 1%;
   display: grid;
@@ -503,11 +513,64 @@ align-self: center;
 #gearongnd{
   grid-column: 1 / 3;
 }
+#smydtitle{
+  padding-top: 5%;
+}
 #whlspd{
   grid-column: 3 / 7;
   justify-content: center;
 }
 
+#smydgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  
+}
+#smyd1{
+  grid-column: 1/2;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  font-size: .8rem;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+#smyd1 * {
+  padding-top: 1%;
+}
+#smyd2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: .8rem;
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-right: 2%;
+}
+#smyd2 * {
+  padding-top: 1%;
+}
+#smyd3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: .8rem;
+  padding-left: 5px;
+  margin-left: 5%;
+  margin-top: 20%;
+  padding-right: 2%;
+}
+#smyd3 * {
+  padding-top: 1%;
+}
+.borderbottom{
+  border-bottom: 1px solid #16f8fb;
+}
+.borderleft{
+  border-left: 1px solid #16f8fb;
+}
+.borderright{
+  border-right: 1px solid #16f8fb;
+}
 
 /*footer*/
 .footer {
