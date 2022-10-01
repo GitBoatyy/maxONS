@@ -17,7 +17,8 @@ import datalinkselection from './datalinkselection'
 import eraseselection from './eraseselection'
 import onboardMaint from './ONBDMaint';
 import acDisplay from './maintdatapgs/display/acdisplay';
-import fcDisplay from './maintdatapgs/display/fcdisplay'
+import fcDisplay from './maintdatapgs/display/fcdisplay';
+import smydDisplay from './maintdatapgs/display/smyddisplay'
 createMFP()
 
 //MFP button interactions
@@ -69,6 +70,8 @@ function someListener(event){
         goToMDP()
     }else if(element.id == 'dsfc'){
         fcDisplay()
+    }else if(element.id == 'dssmyd'){
+        smydDisplay()
     }
 }
 
