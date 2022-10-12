@@ -211,7 +211,21 @@ s3text('smydr', 'ACTIVE', 'whitef', 'borderleft')
 
 //copy all code above here to start of function
 //for all main data pgs display function copy all below
-let currentTime = new Date();
+
+
+//function to display UTC time and tick
+function displayT() {
+    let x = new Date()
+    let hour = x.getUTCHours()
+    let min = x.getUTCMinutes()
+    let sec = x.getUTCSeconds()
+    if(hour <10 ){hour='0'+hour;}
+    if(min <10 ) {min='0' + min; }
+    if(sec<10){sec='0' + sec;}
+    document.getElementById('displayTIMED').innerHTML = hour + ':' + min + ':' + sec;
+    setTimeout(displayT, 1000);
+     }
+
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = today.toLocaleString('en-US', {month: 'short'})
@@ -259,15 +273,16 @@ function displaybuttonpage(a, b) {
 foot()
 fillerf()
 fillerf()
-fillerf()
-fillerf()
 newtextf('acdisplayDATE', 'DATE', 'bluef')
 newtextf('acdisplayDATED', today, 'whitef' )
+newtextf('displayTIME', 'UTC', 'bluef')
+newtextf('displayTIMED', '', 'whitef')
 displaybuttonf('PREV MENU', 'prevmenu')
-displaybuttonf('PRINT')
-displaybuttonf('SEND')
-displaybuttonf('RECORD')
-displaybuttonpage('PREV PAGE')
-displaybuttonpage('NEXT PAGE')
+fillerf()
+fillerf()
+fillerf()
+displaybuttonf('PREV PAGE', 'prevpage1')
+displaybuttonf('NEXT PAGE', 'prevpage2')
+displayT()
 }
 

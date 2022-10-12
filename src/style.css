@@ -266,6 +266,16 @@ body{
 .amberf{
   color: rgb(238, 172, 48);
 }
+.largef{
+  font-size: calc(12px + 0.390625vw);
+}
+.midf{
+  font-size: calc(10px + 0.390625vw);
+}
+.smallf{
+  font-size: calc(9px + 0.390625vw);
+
+}
 .invis{
   visibility: hidden;
 }
@@ -449,10 +459,12 @@ align-self: center;
   padding-right: 10%;
 }
 .center{
+  display: flex;
   justify-content: center;
 }
 
 .right{
+  display: flex;
   justify-content: right;
 }
 
@@ -532,7 +544,7 @@ align-self: center;
   grid-row: 1/4;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
-  font-size: .8rem;
+  font-size: calc(9px + 0.390625vw);
   padding-top: 5%;
   padding-left: 2%;
 }
@@ -542,7 +554,7 @@ align-self: center;
 #smyd2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: .8rem;
+  font-size: calc(9px + 0.390625vw);
   margin-left: 5%;
   padding-top: 5%;
   padding-right: 2%;
@@ -553,7 +565,7 @@ align-self: center;
 #smyd3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: .8rem;
+  font-size: calc(9px + 0.390625vw);
   padding-left: 5px;
   margin-left: 5%;
   margin-top: 20%;
@@ -571,6 +583,47 @@ align-self: center;
 .borderright{
   border-right: 1px solid #16f8fb;
 }
+
+#mdsdisplaycontainer{
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  gap: 5%;
+}
+#mdsheader{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column: 1 / 3;
+  padding-top: 2%;
+  padding-right: 5%;
+}
+
+#mdscontainer2{
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  gap: 5%;
+  grid-column: 1/3;
+}
+
+.mdsf{
+  padding-top: 8%;
+}
+#mdsbrightcontainer2{
+  display: grid;
+  grid-template: 1fr/ 2fr 1fr 1fr 1fr 1fr;
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  gap: 5%;
+  grid-column: 1/3;
+}
+
+
 
 /*footer*/
 .footer {

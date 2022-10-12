@@ -1,6 +1,5 @@
-
-export default function acDisplay(){
-
+//change function name for each page and container id (line 42)
+export default function mdsDisplayBright(){
     const displaycontainer = document.getElementById('displaycontainer')
     displaycontainer.replaceChildren()
     const navbar = document.createElement('div')
@@ -32,131 +31,107 @@ export default function acDisplay(){
     obmaint.innerText = 'ONBD MAINT'
     navbar.appendChild(obmaint)
     const container = document.createElement('div')
-    container.id = 'acdisplaycontainer'
+    container.id = 'mdsbrightdisplaycontainer' //change this container name for specific page layouts
     displaycontainer.appendChild(container)
-//ids are grid location column/row for css placement
-function newtext(a, b, c) {
+    
+
+    //a = id. b = innerText. c = font color classlist (bluef / whitef)
+function newtext(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont");
+    newtext.classList.add(c, d, e, f);
     newtext.innerText = b;
-    container.appendChild(newtext);
+    container2.appendChild(newtext);
     }
-
+    //this function is just to fill empty spots in grid
+    //saves time over css grid placement
 function filler() {
     const filler = document.createElement('div');
     filler.innerText = 'x'
     container.appendChild(filler);
     }
+//page specific code goes below here
 
-newtext('acdisplayAIRCON', 'AIR CONDITIONING', 'bluef')
-newtext('acdisplayunits', 'METRIC UNITS', 'whitef')
-newtext('acdisplayTRIMAIR', 'TRIM AIR', 'bluef')
-newtext('acdisplayon', 'ON', 'whitef')
-newtext('acdisplayCONT', 'CONT CAB', 'bluef')
-newtext('acdisplayFWD', 'FORWARD', 'bluef')
-newtext('acdisplayAFT', 'AFT', 'bluef')
-newtext('acdisplaySEL', 'SELECTOR TEMP', 'bluef')
-newtext('acdisplaySELCONT', '24', 'whitef')
-newtext('acdisplaySELFWDT', '24', 'whitef')
-newtext('acdisplaySELAFT', '24', 'whitef')
-newtext('acdisplayZONE', 'ZONE TEMP', 'bluef')
-newtext('acdisplayZONET', '30', 'whitef')
-newtext('acdisplayZONECONT', '29', 'whitef')
-newtext('acdisplayZONEFWD', '28', 'whitef')
-newtext('acdisplayZONEDUCT', 'ZONE DUCT TEMP', 'bluef')
-newtext('acdisplayZONEDUCTCONT', '36', 'whitef')
-newtext('acdisplayZONEDUCTFWD', '31', 'whitef')
-newtext('acdisplayZONEDUCTAFT', '30', 'whitef')
-newtext('acdisplayZONETRIM', 'ZONE TRIM VLV POS', 'bluef')
-newtext('acdisplayZONETRIMCONT', 'CLOSED', 'whitef')
-newtext('acdisplayZONETRIMFWD', 'CLOSED', 'whitef')
-newtext('acdisplayZONETRIMAFT', 'CLOSED', 'whitef')
-filler()
-filler()
-filler()
-filler()
-filler()
-newtext('acdisplayL', 'LEFT', 'bluef')
-newtext('acdisplayR', 'RIGHT', 'bluef')
-filler()
-newtext('acdisplayPACKM', 'PACK MODE', 'bluef')
-newtext('acdisplayOff1', 'OFF', 'whitef')
-newtext('acdisplayOff2', 'OFF', 'whitef')
-filler()
-newtext('acdisplayPIT', 'PACK INLET TEMP', 'bluef')
-newtext('acdisplayPITL', '40', 'whitef')
-newtext('acdisplayPITR', '41', 'whitef')
-filler()
-newtext('acdisplayPIP', 'PACK INLET PRESSURE', 'bluef')
-newtext('acdisplayPIPL', '0', 'whitef')
-newtext('acdisplayPIPR', '0', 'whitef')
-filler()
-newtext('acdisplayPST', 'PACK SENSOR TEMP', 'bluef')
-newtext('acdisplayPSTL', '25', 'whitef')
-newtext('acdisplayPSTR', '25', 'whitef')
-filler()
-newtext('acdisplayMIX', 'MIX MANIFOLD TEMP', 'bluef')
-newtext('acdisplayMIXL', '28', 'whitef')
-newtext('acdisplayMIXR', '28', 'whitef')
-filler()
-filler()
-filler()
-filler()
-filler()
-newtext('acdisplayPTCV', 'PACK TCV POSITION', 'bluef')
-newtext('acdisplayPTCVL', 'CLOSED', 'whitef')
-newtext('acdisplayPTCVR', 'CLOSED', 'whitef')
-filler()
-newtext('acdisplaySTBYTCV', 'STBY TCV DRIVE (mA)', 'bluef')
-newtext('acdisplaySTBYTCVL', '1', 'whitef')
-newtext('acdisplaySTBYTCVR', '1', 'whitef')
-filler()
-filler()
-filler()
-filler()
-filler()
-newtext('acdisplayPF', 'PACK FLOW (LB/MIN)', 'bluef')
-newtext('acdisplayPFL', '0', 'whitef')
-newtext('acdisplayPFR', '0', 'whitef')
-filler()
-newtext('acdisplayPFCV', ' PACK FCV', 'bluef')
-newtext('acdisplayPFCVL', 'CLOSED', 'whitef')
-newtext('acdisplayPFCVR', 'CLOSED', 'whitef')
-filler()
-filler()
-filler()
-filler()
-filler()
-newtext('acdisplaySAT', 'STATIC AIR TEMP (°C)', 'bluef')
-newtext('acdisplaySATNUM', '+27.3', 'whitef')
-filler()
-filler()
-newtext('acdisplayCA', 'SCABIN ALTITUDE', 'bluef')
-newtext('acdisplayCANUM', '1400', 'whitef')
-filler()
-filler()
-newtext('acdisplayALT', 'ALTITUDE', 'bluef')
-newtext('acdisplayALTNUM', '1386', 'whitef')
-filler()
-filler()
-newtext('acdisplayPFS', 'PACK FLOW SCHEDULE', 'bluef')
-newtext('acdisplayPFSNUM', '11', 'whitef')
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
-filler()
 
+//header and page data block
+const header = document.createElement('div')
+header.id = 'mdsheader'
+container.appendChild(header)
+function newtextheader(a, b, c, d, e, f) {
+    const newtext = document.createElement("div");
+    newtext.id = a;
+    newtext.classList.add(c, "dsfont", d, e, f);
+    newtext.innerText = b;
+    header.appendChild(newtext);
+}
+newtextheader('mdsmaintpage', 'MDS MAINT PAGE - BRIGHTNESS', 'right', 'underline', 'bluef')
+newtextheader('pg1o19', 'PG 2 OF 19', 'bluef', 'right')
+//header and page data block
+
+//page info 
+const container2 = document.createElement('div')
+container2.id = 'mdsbrightcontainer2'
+container.appendChild(container2)
+
+newtext('inputbright', 'INPUTS', 'underline', 'bluef', 'largef')
+newtext('lob', 'LOB', 'bluef', 'largef', 'center')
+newtext('lib', 'LIB', 'bluef', 'largef', 'center')
+newtext('rib', 'RIB', 'bluef', 'largef', 'center')
+newtext('rob', 'ROB', 'bluef', 'largef', 'center')
+
+newtext('brtctrl', 'BRIGHT CTRL (%)', 'bluef', 'smallf')
+newtext('', '33', 'whitef', 'midf', 'center')
+newtext('', '100', 'whitef', 'midf', 'center')
+newtext('', '50', 'whitef', 'midf', 'center')
+newtext('', '43', 'whitef', 'midf', 'center')
+
+newtext('cntrctrl', 'CONTRAST CTRL (%)', 'bluef', 'smallf')
+newtext('', '0', 'whitef', 'midf', 'center')
+newtext('', '100', 'whitef', 'midf', 'center')
+newtext('', '49', 'whitef', 'midf', 'center')
+newtext('', '45', 'whitef', 'midf', 'center')
+
+newtext('', 'BLS (FC)', 'bluef', 'smallf')
+newtext('', '1.0', 'whitef', 'midf', 'center')
+newtext('', '1.9', 'whitef', 'midf', 'center')
+newtext('', '2.5', 'whitef', 'midf', 'center')
+newtext('', '1.2', 'whitef', 'midf', 'center')
+
+newtext('', 'RLS (FC)', 'bluef', 'smallf')
+newtext('', '20', 'whitef', 'midf', 'center')
+newtext('', 'x', 'invis', 'midf', 'center')
+newtext('', 'x', 'invis', 'midf', 'center')
+newtext('', '55', 'whitef', 'midf', 'center')
+
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+
+newtext('outputsbright', 'OUTPUTS', 'bluef', 'largef', 'underline')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+newtext('', 'x', 'invis')
+
+newtext('', 'COMMANDED BRIGHTNESS (%)', 'bluef', 'smallf')
+newtext('', '3', 'whitef', 'midf', 'center')
+newtext('', '15', 'whitef', 'midf', 'center')
+newtext('', '4', 'whitef', 'midf', 'center')
+newtext('', '3', 'whitef', 'midf', 'center')
+
+newtext('', 'COMMANDED CONTRAST (%)', 'bluef', 'smallf')
+newtext('', '0', 'whitef', 'midf', 'center')
+newtext('', '99', 'whitef', 'midf', 'center')
+newtext('', '47', 'whitef', 'midf', 'center')
+newtext('', '43', 'whitef', 'midf', 'center')
+
+
+//page info block
+
+
+//copy all code above here to start of function
 //for all main data pgs display function copy all below
 
 
@@ -224,11 +199,11 @@ newtextf('acdisplayDATE', 'DATE', 'bluef')
 newtextf('acdisplayDATED', today, 'whitef' )
 newtextf('displayTIME', 'UTC', 'bluef')
 newtextf('displayTIMED', '', 'whitef')
-displaybuttonf('PREV MENU', 'prevmenu')
+displaybuttonf('PREV MENU', 'mdsprevmenu')
 fillerf()
 fillerf()
 fillerf()
-displaybuttonf('PREV PAGE', 'prevpage1')
-displaybuttonf('NEXT PAGE', 'prevpage2')
+displaybuttonf('PREV PAGE', 'mdspg2prevpage')
+displaybuttonf('NEXT PAGE', 'mdspg2nextpage')
 displayT()
 }

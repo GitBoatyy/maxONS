@@ -18,7 +18,10 @@ import eraseselection from './eraseselection'
 import onboardMaint from './ONBDMaint';
 import acDisplay from './maintdatapgs/display/acdisplay';
 import fcDisplay from './maintdatapgs/display/fcdisplay';
-import smydDisplay from './maintdatapgs/display/smyddisplay'
+import smydDisplay from './maintdatapgs/display/smyddisplay';
+import mdsDisplay from './maintdatapgs/display/mdsdisplay';
+import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
+
 createMFP()
 
 //MFP button interactions
@@ -72,7 +75,18 @@ function someListener(event){
         fcDisplay()
     }else if(element.id == 'dssmyd'){
         smydDisplay()
+    }else if(element.id == 'dsmds'){
+        mdsDisplay()
+    }else if(element.id == 'mdsprevmenu'){
+        mdsDisplay()
+    }else if(element.id == 'mdsbrightbutt'){
+        mdsDisplayBright()
+    }else if(element.id == 'mdspg1nextpage'){
+        mdsDisplayBright()
+    }else if(element.id == 'mdspg2prevpage'){
+        mdsDisplay()
     }
+
 }
 
 
