@@ -275,10 +275,10 @@ body{
   font-size: calc(12px + 0.390625vw);
 }
 .midf{
-  font-size: calc(10px + 0.390625vw);
+  font-size: 11px;
 }
 .smallf{
-  font-size: calc(9px + 0.390625vw);
+  font-size: 10px;
 
 }
 .invis{
@@ -832,9 +832,9 @@ align-self: center;
 #mdsdpcdigi{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto;
   column-gap: 5%;
   margin: 1%;
+  height: fit-content;
 }
 #mdsdpcdigihead{
   grid-column: 1 / 4;

@@ -96,6 +96,8 @@ function someListener(event){
         mdsDPCDigiInput()
     }else if(element.id == 'mdspg4prevpage'){
         mdsDisplays()
+    }else if(element.id == 'mdsdigibutt'){
+        mdsDPCDigiInput()
     }
 
 }

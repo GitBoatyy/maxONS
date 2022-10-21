@@ -68,7 +68,7 @@ newtextheader('pg3o19', 'PG 4 OF 19', 'bluef', 'right')
 
 //page info 
 const container2 = document.createElement('div')
-container2.id = 'mdsdisplaycontainer2'
+container2.id = 'mdsdpcdigicontainer2'
 container.appendChild(container2)
 
 function containerMaker(a, b){
