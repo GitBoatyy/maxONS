@@ -21,6 +21,7 @@ import fcDisplay from './maintdatapgs/display/fcdisplay';
 import smydDisplay from './maintdatapgs/display/smyddisplay';
 import mdsDisplay from './maintdatapgs/display/mdsdisplay';
 import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
+import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays'
 
 createMFP()
 
@@ -85,6 +86,14 @@ function someListener(event){
         mdsDisplayBright()
     }else if(element.id == 'mdspg2prevpage'){
         mdsDisplay()
+    }else if(element.id == 'mdspg2nextpage'){
+        mdsDisplays()
+    }else if(element.id == 'mdsdisplaybutt'){
+        mdsDisplays()
+    }else if(element.id == 'mdspg3prevpage'){
+        mdsDisplayBright()
+    }else if(element.id == 'mdspg3nextpage'){
+        console.log('mdspg3nextpage')
     }
 
 }
