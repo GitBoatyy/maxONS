@@ -339,6 +339,12 @@ padding-left: 5%;
   align-items: center;
   font-weight: bold;
 }
+.dsfonts{
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
 
 .dsbutton{
   width: 80%;

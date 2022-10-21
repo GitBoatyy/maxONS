@@ -201,10 +201,10 @@ function newtextf(a, b, c) {
     foot.appendChild(newtext);
     }
 
-function displaybuttonf(a, b) {
+function displaybuttonf(a, b, c) {
     const foot = document.getElementById('displaycontfooter')
     const displaybutton = document.createElement('button');
-    displaybutton.classList.add('navbutton', 'buttonhover');
+    displaybutton.classList.add('navbutton', 'buttonhover', c);
     displaybutton.innerText = a;
     displaybutton.id = b;
     foot.appendChild(displaybutton);
@@ -228,7 +228,7 @@ displaybuttonf('PREV MENU', 'prevmenu')
 fillerf()
 fillerf()
 fillerf()
-displaybuttonf('PREV PAGE', 'prevpage1')
-displaybuttonf('NEXT PAGE', 'prevpage2')
+displaybuttonf('PREV PAGE', 'prevpage1', 'pagebutton')
+displaybuttonf('NEXT PAGE', 'prevpage2', 'pagebutton')
 displayT()
 }

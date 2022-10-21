@@ -38,7 +38,7 @@ export default function smydDisplay(){
 function newtext(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont", d, e, f);
+    newtext.classList.add(c, "dsfonts", d, e, f);
     newtext.innerText = b;
     container.appendChild(newtext);
     }
@@ -61,7 +61,7 @@ smydgrid.appendChild(smyd1)
 function s1text(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont", d, e, f);
+    newtext.classList.add(c, "dsfonts", d, e, f);
     newtext.innerText = b;
     smyd1.appendChild(newtext);
 }
@@ -153,7 +153,7 @@ smydgrid.appendChild(smyd2)
 function s2text(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont", d, e, f);
+    newtext.classList.add(c, "dsfonts", d, e, f);
     newtext.innerText = b;
     smyd2.appendChild(newtext);
 }
@@ -179,7 +179,7 @@ smydgrid.appendChild(smyd3)
 function s3text(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont", d, e, f);
+    newtext.classList.add(c, "dsfonts", d, e, f);
     newtext.innerText = b;
     smyd3.appendChild(newtext);
 }
@@ -249,15 +249,15 @@ function newtextf(a, b, c) {
     const foot = document.getElementById('displaycontfooter')
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfont");
+    newtext.classList.add(c, "dsfonts");
     newtext.innerText = b;
     foot.appendChild(newtext);
     }
 
-function displaybuttonf(a, b) {
+function displaybuttonf(a, b, c) {
     const foot = document.getElementById('displaycontfooter')
     const displaybutton = document.createElement('button');
-    displaybutton.classList.add('navbutton', 'buttonhover');
+    displaybutton.classList.add('navbutton', 'buttonhover', c);
     displaybutton.innerText = a;
     displaybutton.id = b;
     foot.appendChild(displaybutton);
@@ -281,8 +281,8 @@ displaybuttonf('PREV MENU', 'prevmenu')
 fillerf()
 fillerf()
 fillerf()
-displaybuttonf('PREV PAGE', 'prevpage1')
-displaybuttonf('NEXT PAGE', 'prevpage2')
+displaybuttonf('PREV PAGE', 'prevpage1', 'pagebutton')
+displaybuttonf('NEXT PAGE', 'prevpage2', 'pagebutton')
 displayT()
 }
 
