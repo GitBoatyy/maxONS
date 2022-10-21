@@ -262,6 +262,9 @@ body{
 .blackf{
   color: black;
 }
+.grayf{
+  color: gray;
+}
 .underline{
   text-decoration: underline;
 }
@@ -824,6 +827,31 @@ align-self: center;
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 2fr;
+}
+
+#mdsdpcdigi{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 5%;
+  margin: 1%;
+}
+#mdsdpcdigihead{
+  grid-column: 1 / 4;
+}
+#mdsdpcdigi1{
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+#mdsdpcdigi11{
+  grid-column: 1/4;
+}
+#mdsdpcdigi2{
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+#mdsdpcdigi21{
+  grid-column: 1/4;
 }
 
 /*footer*/

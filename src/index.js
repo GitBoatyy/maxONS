@@ -22,7 +22,7 @@ import smydDisplay from './maintdatapgs/display/smyddisplay';
 import mdsDisplay from './maintdatapgs/display/mdsdisplay';
 import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
 import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays'
-
+import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput'
 createMFP()
 
 //MFP button interactions
@@ -93,7 +93,9 @@ function someListener(event){
     }else if(element.id == 'mdspg3prevpage'){
         mdsDisplayBright()
     }else if(element.id == 'mdspg3nextpage'){
-        console.log('mdspg3nextpage')
+        mdsDPCDigiInput()
+    }else if(element.id == 'mdspg4prevpage'){
+        mdsDisplays()
     }
 
 }
