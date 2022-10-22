@@ -23,6 +23,8 @@ import mdsDisplay from './maintdatapgs/display/mdsdisplay';
 import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
 import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays'
 import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput'
+import mdsdpcdigiinputB from './maintdatapgs/display/mdsdisplaydigiinput2'
+
 createMFP()
 
 //MFP button interactions
@@ -98,6 +100,12 @@ function someListener(event){
         mdsDisplays()
     }else if(element.id == 'mdsdigibutt'){
         mdsDPCDigiInput()
+    }else if(element.id == 'mdspg4nextpage'){
+        mdsdpcdigiinputB()
+    }else if(element.id == 'mdspg5prevpage'){
+        mdsDPCDigiInput()
+    }else if(element.id == 'mdspg5nextpage'){
+        console.log('nxtpg')
     }
 
 }
