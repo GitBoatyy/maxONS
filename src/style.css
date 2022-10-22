@@ -339,12 +339,6 @@ padding-left: 5%;
   align-items: center;
   font-weight: bold;
 }
-.dsfonts{
-  font-size: 9px;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-}
 
 .dsbutton{
   width: 80%;
@@ -860,6 +854,21 @@ align-self: center;
   grid-column: 1/4;
 }
 
+#mdsdpcdigi21{
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 3fr 3fr 2fr;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#mdsdpcdigi22{
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 0.8fr 2.5fr 2.5fr 3fr ;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 85%;
+}
 /*footer*/
 .footer {
     position: fixed;

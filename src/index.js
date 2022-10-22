@@ -24,6 +24,8 @@ import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
 import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays'
 import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput'
 import mdsdpcdigiinputB from './maintdatapgs/display/mdsdisplaydigiinput2'
+import mdsdpcdigiinputpin1 from './maintdatapgs/display/mdsdpcgigiinputpin1'
+
 
 createMFP()
 
@@ -105,7 +107,9 @@ function someListener(event){
     }else if(element.id == 'mdspg5prevpage'){
         mdsDPCDigiInput()
     }else if(element.id == 'mdspg5nextpage'){
-        console.log('nxtpg')
+        mdsdpcdigiinputpin1()
+    }else if(element.id == 'mdspg6prevpage'){
+        mdsdpcdigiinputB()
     }
 
 }
