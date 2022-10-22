@@ -21,11 +21,11 @@ import fcDisplay from './maintdatapgs/display/fcdisplay';
 import smydDisplay from './maintdatapgs/display/smyddisplay';
 import mdsDisplay from './maintdatapgs/display/mdsdisplay';
 import mdsDisplayBright from './maintdatapgs/display/mdsDisplayBright';
-import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays'
-import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput'
-import mdsdpcdigiinputB from './maintdatapgs/display/mdsdisplaydigiinput2'
-import mdsdpcdigiinputpin1 from './maintdatapgs/display/mdsdpcgigiinputpin1'
-
+import mdsDisplays from './maintdatapgs/display/mdsdisplaydisplays';
+import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput';
+import mdsdpcdigiinputB from './maintdatapgs/display/mdsdisplaydigiinput2';
+import mdsdpcdigiinputpin1 from './maintdatapgs/display/mdsdpcgigiinputpin1';
+import mdsdpcdigiinputD from './maintdatapgs/display/mdsdisplaydigiinput3';
 
 createMFP()
 
@@ -110,6 +110,12 @@ function someListener(event){
         mdsdpcdigiinputpin1()
     }else if(element.id == 'mdspg6prevpage'){
         mdsdpcdigiinputB()
+    }else if(element.id == 'mdspg6nextpage'){
+        mdsdpcdigiinputD()
+    }else if(element.id == 'mdspg7prevpage'){
+        mdsdpcdigiinputpin1()
+    }else if(element.id == 'mdspg7nextpage'){
+        console.log('next')
     }
 
 }
