@@ -191,7 +191,7 @@ newtext('mdsdpcdigi1', '', '2T4', 'bluef', 'smallf', 'center', 'borderleft')
 newtext('mdsdpcdigi1', '', 'ACTIVE', 'whitef', 'smallf', 'borderleft')
 
 subCMaker('mdsdpcdigi', 'mdsdpcdigi2')
-newtext('mdsdpcdigi2', 'mdsdpcdigi21', 'DPC-2', 'bluef', 'center')
+newtext('mdsdpcdigi2', 'mdsdpcdigi11', 'DPC-2', 'bluef', 'center')
 newtext('mdsdpcdigi2', '', 'A', 'bluef', 'center', 'smallf')
 newtext('mdsdpcdigi2', '', 'B', 'bluef', 'center', 'smallf', 'borderleft')
 newtext('mdsdpcdigi2', '', 'x', 'center', 'smallf', 'borderleft')

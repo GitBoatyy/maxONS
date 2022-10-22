@@ -26,6 +26,10 @@ import mdsDPCDigiInput from './maintdatapgs/display/mdsdpcdigiinput';
 import mdsdpcdigiinputB from './maintdatapgs/display/mdsdisplaydigiinput2';
 import mdsdpcdigiinputpin1 from './maintdatapgs/display/mdsdpcgigiinputpin1';
 import mdsdpcdigiinputD from './maintdatapgs/display/mdsdisplaydigiinput3';
+import mdsdpcdigiinputE from './maintdatapgs/display/mdsdisplaydigiinput4'
+
+
+
 
 createMFP()
 
@@ -115,7 +119,11 @@ function someListener(event){
     }else if(element.id == 'mdspg7prevpage'){
         mdsdpcdigiinputpin1()
     }else if(element.id == 'mdspg7nextpage'){
-        console.log('next')
+        mdsdpcdigiinputE()
+    }else if(element.id == 'mdspg8prevpage'){
+        mdsdpcdigiinputD()
+    }else if(element.id =='mdspg8nextpage'){
+        console.log('yup')
     }
 
 }
