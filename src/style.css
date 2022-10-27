@@ -562,35 +562,35 @@ align-self: center;
   grid-row: 1/4;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
-  font-size: calc(9px + 0.390625vw);
+  font-size: 10px;
   padding-top: 5%;
   padding-left: 2%;
 }
 #smyd1 * {
-  padding-top: 1%;
+  padding-top: 0.5%;
 }
 #smyd2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: calc(9px + 0.390625vw);
+  font-size: 10px;
   margin-left: 5%;
   padding-top: 5%;
   padding-right: 2%;
 }
 #smyd2 * {
-  padding-top: 1%;
+  padding-top: 0.5%;
 }
 #smyd3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: calc(9px + 0.390625vw);
+  font-size: 10px;
   padding-left: 5px;
   margin-left: 5%;
   margin-top: 20%;
   padding-right: 2%;
 }
 #smyd3 * {
-  padding-top: 1%;
+  padding-top: 0.5%;
 }
 .borderbottom{
   border-bottom: 1px solid #16f8fb;

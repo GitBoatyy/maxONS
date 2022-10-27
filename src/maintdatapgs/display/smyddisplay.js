@@ -38,7 +38,7 @@ export default function smydDisplay(){
 function newtext(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfonts", d, e, f);
+    newtext.classList.add(c, "dsfont", d, e, f);
     newtext.innerText = b;
     container.appendChild(newtext);
     }
@@ -61,7 +61,7 @@ smydgrid.appendChild(smyd1)
 function s1text(a, b, c, d, e, f) {
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfonts", d, e, f);
+    newtext.classList.add(c, "dsfont", d, e, f);
     newtext.innerText = b;
     smyd1.appendChild(newtext);
 }
@@ -249,7 +249,7 @@ function newtextf(a, b, c) {
     const foot = document.getElementById('displaycontfooter')
     const newtext = document.createElement("div");
     newtext.id = a;
-    newtext.classList.add(c, "dsfonts");
+    newtext.classList.add(c, "dsfont");
     newtext.innerText = b;
     foot.appendChild(newtext);
     }
